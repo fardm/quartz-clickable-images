@@ -214,7 +214,6 @@ var rehypeClickableImages = () => {
         node.properties = {
           ...node.properties,
           className: [...classes, "lightbox-image"],
-          "data-src": originalSrc,
           "data-alt": originalAlt,
           loading: "lazy"
         };
@@ -444,7 +443,7 @@ body.lightbox-open {
                     e.preventDefault();
                     const img = wrapper.querySelector('.lightbox-image');
                     if (img) {
-                      const src = img.getAttribute('data-src') || img.src;
+                      const src = img.currentSrc || img.src;
                       const alt = img.getAttribute('data-alt') || img.alt;
                       openLightbox(src, alt, img);
                     }

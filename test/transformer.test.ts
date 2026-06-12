@@ -27,7 +27,6 @@ describe("ClickableImages Transformer", () => {
     expect(outputHtml).toContain('class="lightbox-wrapper"');
     expect(outputHtml).toContain('data-lightbox="true"');
     expect(outputHtml).toContain('class="lightbox-image"');
-    expect(outputHtml).toContain('data-src="test-image.jpg"');
     expect(outputHtml).toContain('data-alt="This is a test"');
     expect(outputHtml).toContain('loading="lazy"');
   });
