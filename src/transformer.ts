@@ -68,10 +68,11 @@ export const ClickableImages: QuartzTransformerPlugin<Partial<ClickableImagesOpt
             content: `
 /* Lightbox Image Styles */
 .lightbox-wrapper {
-  display: inline-block;
+  display: block;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.4s ease;
   margin: 0;
+  justify-self: center;
 }
 
 .lightbox-wrapper:hover {
