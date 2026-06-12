@@ -253,19 +253,7 @@ var ClickableImages = (_userOptions) => {
 }
 
 .lightbox-wrapper:hover {
-  transform: scale(1.02);
-}
-
-.lightbox-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.2s ease;
-}
-
-.lightbox-image:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
 }
 
 /* Modal/Lightbox Overlay */
@@ -295,8 +283,6 @@ var ClickableImages = (_userOptions) => {
   max-width: 90vw;
   max-height: 90vh;
   object-fit: contain;
-  border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   transform: scale(0.8);
   transition: transform 0.3s ease;
 }
